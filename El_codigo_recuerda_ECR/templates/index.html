@@ -1,0 +1,10 @@
+{% extends 'layouts/base.html'%}
+
+{% block title %} About me {% endblock %}
+{% block content %}
+    <ul>
+    {% for i in me %}
+        <li>{{ i.names }}{{ i.last_names}}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

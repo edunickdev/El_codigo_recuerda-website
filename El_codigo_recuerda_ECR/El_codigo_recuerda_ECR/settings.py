@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'about_me',
+    'education',
+    'my_blog',
+    'portfolio',
+    'work'
 ]
 
 MIDDLEWARE = [
@@ -80,7 +85,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': '127.0.0.1',
-        'PORT': '5438',
+        'PORT': '5432',
     }
 }
 
@@ -123,7 +128,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    'var/www/static'
+    #'var/www/static'
 ]
 
 # Default primary key field type

@@ -16,8 +16,7 @@ class About_me(models.Model):
     names = models.CharField(max_length=35, null=False)
     last_names = models.CharField(max_length=35, null=False)
     address = models.CharField(max_length=40, null=False)
-    networks = models.ForeignKey(Network, on_delete=models.CASCADE)
+    networks = models.ForeignKey(Network, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.names
-

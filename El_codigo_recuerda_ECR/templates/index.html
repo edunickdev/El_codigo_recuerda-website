@@ -3,8 +3,8 @@
 {% block title %} About me {% endblock %}
 {% block content %}
     <ul>
-    {% for i in me %}
-        <li>{{ i.names }}{{ i.last_names}}</li>
+    {% for me in person %}
+        <li>{{ me.names }}{{ me.last_names}}</li>
     {% endfor %}
     </ul>
 {% endblock %}

@@ -1,10 +1,10 @@
 {% extends 'layouts/base.html'%}
 
-{% block title %} About me {% endblock %}
+
+{% block title %}Home - ECR{% endblock %}
 {% block content %}
-    <ul>
-    {% for me in person %}
-        <li>{{ me.names }}{{ me.last_names}}</li>
-    {% endfor %}
-    </ul>
+    {% include 'layouts/partials/header.html' %}
 {% endblock %}
+
+
+

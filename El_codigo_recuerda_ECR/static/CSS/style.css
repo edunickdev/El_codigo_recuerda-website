@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    height: 80%;
+    width: 100%;
+}

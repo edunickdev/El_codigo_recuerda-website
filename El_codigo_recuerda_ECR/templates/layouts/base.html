@@ -7,12 +7,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %} archivo base {% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/general_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/partials/nav_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/partials/footer_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/partials/header_style.css' %}">
+    <title>{% block titulo %} archivo base {% endblock %}</title>
 </head>
 <body>
     {% include 'layouts/partials/navigation.html' %}
-    {% block content %} {% endblock %}
+    {% block contenido %}  {% endblock %}
     {% include 'layouts/partials/footer.html' %}
 </body>
 </html>

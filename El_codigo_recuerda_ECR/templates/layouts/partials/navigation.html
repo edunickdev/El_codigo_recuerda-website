@@ -1,7 +1,15 @@
-<ul>
-    <li><a href="">About me</a></li>
-    <li><a href="">My experience</a></li>
-    <li><a href="">Studies</a></li>
-    <li><a href="">Portfolio</a></li>
-    <li><a href="">My blog</a></li>
-</ul>
+{% load static %}
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="{% static 'images/ECR_celeste.png' %}" alt="logo-ECR" class="logo">
+        </div>
+        <ul class="nav_group">
+            <li><a href="">About me</a></li>
+            <li><a href="">My experience</a></li>
+            <li><a href="">Studies</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">My blog</a></li>
+        </ul>
+    </div>
+</div>

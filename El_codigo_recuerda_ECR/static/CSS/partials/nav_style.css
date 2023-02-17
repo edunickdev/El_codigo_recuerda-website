@@ -1,0 +1,41 @@
+.container {
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: rgb(21, 25, 39);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_group{
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav_group li {
+    padding: 1rem;
+}
+
+.nav_group a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_group a:hover{
+    color: rgb(79, 153, 208);
+}
+
+.logo {
+    height: 5rem;
+    width: 30%;
+}

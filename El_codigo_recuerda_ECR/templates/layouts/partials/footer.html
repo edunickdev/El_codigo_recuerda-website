@@ -1,9 +1,10 @@
 {% load static %}
 {% block estilos %}<link rel="stylesheet" href="{% static 'CSS/partials/footer_style.css' %}">{% endblock %}
-
+{% for i in person %}
 <footer>
     <div class="foot">
         <p>Página desarrollada usando el framework de Python Django</p>
-        <p>Desarrollada por <a href="">edunickdev</a></p>
+        <p>Desarrollada por <a href="{{ i.networks }}" target="_blank">edunickdev</a></p>
     </div>
+{% endfor %}
 </footer>

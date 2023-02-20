@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import About_me
+from .models import About_me, Network
 
 
 # Create your views here.
@@ -16,7 +16,8 @@ from .models import About_me
 
 def Read(request):
     person = About_me.objects.all()
-    return render(request, 'index.html', {'person': person})
+    url = Network.objects.get(shortname='LinkedIn')
+    return render(request, 'index.html', {'person': person, 'url': url})
 
 
 #def Update(request):

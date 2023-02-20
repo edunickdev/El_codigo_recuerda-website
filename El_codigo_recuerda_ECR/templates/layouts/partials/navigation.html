@@ -5,14 +5,14 @@
 <div class="container">
     <div class="navbar">
         <div class="logo">
-            <img src="{% static 'images/ECR_celeste.png' %}" alt="logo-ECR" class="logo">
+            <a href="{% url 'index' %}"><img src="{% static 'images/ECR_celeste.png' %}" alt="logo-ECR" class="logo"></a>
         </div>
         <ul class="nav_group">
-            <li><a href="">About me</a></li>
-            <li><a href="">My experience</a></li>
-            <li><a href="">Studies</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">My blog</a></li>
+            <li><a href="{% url 'about-me_read' %}">About me</a></li>
+            <li><a href="{% url 'work_read' %}">My experience</a></li>
+            <li><a href="{% url 'education_read' %}">Studies</a></li>
+            <li><a href="{% url 'portfolio_read' %}">Portfolio</a></li>
+            <li><a href="{% url 'my-blog_read' %}">My blog</a></li>
         </ul>
     </div>
 </div>

@@ -12,12 +12,10 @@
     <title>{% block titulo %} archivo base {% endblock %}</title>
 </head>
 <body>
-        {% include 'layouts/partials/navigation.html' %}
+    {% include 'layouts/partials/navigation.html' %}
     <section>
         {% block contenido %}{% endblock %}
     </section>
-    <section>
-        {% include 'layouts/partials/footer.html' %}
-    </section>
+    {% include 'layouts/partials/footer.html' %}
 </body>
 </html>

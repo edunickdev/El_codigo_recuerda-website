@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from work.models import Employee
+from .models import Employee
 
 
 # Create your views here.
 def Read(request):
     employee = Employee.objects.all()
-    return render(request, 'work.html', {})
+    return render(request, 'work/work.html', {'employee': employee})

@@ -1,8 +1,11 @@
 .container {
+    height: auto;
     position: fixed;
+    top: 0;
     width: 100%;
     padding: 1.5rem;
     background-color: rgb(21, 25, 39);
+    z-index: 10;
 }
 
 .navbar{

@@ -5,4 +5,4 @@ from .models import Portfolio
 # Create your views here.
 def Read(request):
     works = Portfolio.objects.all()
-    return render(request, 'portfolio.html', {'works': works})
+    return render(request, 'portfolio/portfolio.html', {'works': works})

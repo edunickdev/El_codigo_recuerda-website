@@ -1,0 +1,23 @@
+{% load static %}
+{% block estilos %}
+    <link rel="stylesheet" href="{% static 'CSS/partials/contactForm_style.css' %}">{% endblock %}
+
+{% csrf_token %}
+<div class="container-form">
+    <h2 class="title-contactForm">Contact me</h2>
+    <form method="post" class="form-container">
+        <div class="form_element">
+            <label for="names">Your names: </label>
+            <input type="text" id="names" placeholder=" ">
+        </div>
+        <div class="form_element">
+            <label for="email">Your Email: </label>
+            <input type="email" id="email" placeholder=" ">
+        </div>
+        <div class="form_element">
+            <label for="message">Which is your motive to contact me?": </label>
+            <input type="text" id="message" placeholder=" ">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>

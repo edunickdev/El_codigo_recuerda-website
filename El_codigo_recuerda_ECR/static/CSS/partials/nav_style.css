@@ -1,11 +1,8 @@
 .container {
     height: auto;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 1.5rem;
-    background-color: rgb(21, 25, 39);
 }
 
 .navbar{
@@ -31,7 +28,7 @@
 .nav_group a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .nav_group a:hover{

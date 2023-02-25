@@ -1,5 +1,7 @@
-.Banner {
-    margin-top: 3rem;
-    height: 90vh;
-    width: 100%;
+body {
+    background-image: url("../../images/Banner_con_logo.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
 }

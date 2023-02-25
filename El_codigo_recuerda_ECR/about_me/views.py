@@ -17,7 +17,7 @@ from .models import About_me, Network
 def Read(request):
     person = About_me.objects.all()
     url = Network.objects.get(shortname='LinkedIn')
-    return render(request, 'index.html', {'person': person, 'url': url})
+    return render(request, 'about/me.html', {'person': person, 'url': url})
 
 
 #def Update(request):

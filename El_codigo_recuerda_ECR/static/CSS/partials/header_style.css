@@ -1,7 +1,7 @@
 body {
-    background-image: url("../../images/Banner_con_logo.png");
+    background-image: url('../../images/Banner_con_logo.png');
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
+    height: 100%;
 }

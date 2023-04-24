@@ -4,6 +4,7 @@
     width: 100%;
     padding: 1.5rem;
     background-color: rgba(80, 90, 150, .3);
+    top: 0;
 }
 
 .navbar{

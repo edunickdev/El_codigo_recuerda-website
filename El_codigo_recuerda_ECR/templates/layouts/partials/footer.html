@@ -1,10 +1,16 @@
 {% load static %}
-{% block estilos %}<link rel="stylesheet" href="{% static 'CSS/partials/footer_style.css' %}">{% endblock %}
+{% block estilos %}
+    <link rel="stylesheet" href="{% static 'CSS/partials/footer_style.css' %}">{% endblock %}
 {% for i in person %}
-<footer>
-    <div class="foot">
-        <p>Página desarrollada usando el framework de Python Django</p>
-        <p>Desarrollada por <a href="{{ i.networks }}" target="_blank">edunickdev</a></p>
-    </div>
+    <footer>
+        <div class="foot">
+            <div class="img_container"><a href=""><img src="{% static 'images/footer/logoGH.png' %}" alt="edunickev"></a></div>
+            <div class="img_container"><a href=""><img src="{% static 'images/footer/logoLI.png' %}" alt="ECR"></a></div>
+            <div class="img_container"><a href=""><img src="{% static 'images/footer/logoIG.png' %}" alt="ECR"></a></div>
+        </div>
+        <div class="sub-foot">
+            <p>Página desarrollada usando el framework de Python Django</p>
+            <p>Desarrollada por <a href="{{ i.networks }}" target="_blank">edunickdev</a></p>
+        </div>
+    </footer>
 {% endfor %}
-</footer>

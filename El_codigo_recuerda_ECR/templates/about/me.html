@@ -1,2 +1,32 @@
+{% load static %}
 {% include 'layouts/base.html' %}
+{% block estilos %}
+    <link rel="stylesheet" href="{% static 'CSS/about/about.css' %}">
+{% endblock %}
+
+{% block contenido %}
+    <h1 class="head_title">Software Developer</h1>
+    <div class="superior">
+        <img src="{% static 'images/about/django.png' %}" alt="django">
+        <img src="{% static 'images/about/react.png' %}" alt="react.js">
+    </div>
+    <div class="partes">
+        <img src="{% static 'images/about/javascript.png' %}" alt="javascript">
+        <img src="{% static 'images/about/html.png' %}" alt="html">
+        <img src="{% static 'images/about/css.png' %}" alt="css">
+    </div>
+    <div class="partes">
+        <img src="{% static 'images/about/perfil.jpg' %}" alt="edunickdev">
+    </div>
+    <div class="partes">
+        <img src="{% static 'images/about/python.png' %}" alt="python">
+        <img src="{% static 'images/about/mysql.png' %}" alt="MySql">
+        <img src="{% static 'images/about/dart.png' %}" alt="Dart">
+    </div>
+    <div class="inferior">
+        <img src="{% static 'images/about/bootstrap.png' %}" alt="bootstrap">
+        <img src="{% static 'images/about/flutter.png' %}" alt="flutter">
+    </div>
+    {% include 'layouts/partials/footer.html' %}
+{% endblock %}
 

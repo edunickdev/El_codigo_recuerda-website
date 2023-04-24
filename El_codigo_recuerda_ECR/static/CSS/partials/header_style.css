@@ -1,7 +1,8 @@
 body {
     background-image: url('../../images/Banner_con_logo.png');
     background-size: cover;
-    background-position: center top;
+    background-position: top center;
     background-repeat: no-repeat;
     height: 100%;
+    margin-top: 50em;
 }
